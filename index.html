@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -183,6 +184,21 @@
     .btn.secondary:hover{
       background: rgba(255,255,255,0.22);
     }
+    .btn.ghost{
+      background: transparent;
+      color: var(--primary);
+      border: 1px solid rgba(106,27,154,0.25);
+      box-shadow: none;
+    }
+    .btn.ghost:hover{
+      background: rgba(106,27,154,0.06);
+      transform: translateY(-2px);
+    }
+    .btn.small{
+      padding: .75rem 1rem;
+      font-size: .95rem;
+      font-weight: 900;
+    }
 
     .hero-badges{
       display:flex;
@@ -340,58 +356,6 @@
       color: var(--dark);
       font-weight: 900;
     }
-    .mission-visual{
-      padding: 1.7rem;
-      display:grid;
-      gap: 1rem;
-    }
-    .visual-top{
-      display:flex;
-      align-items:center;
-      justify-content: space-between;
-      gap: 1rem;
-    }
-    .visual-top .mark{
-      width: 52px; height: 52px;
-      border-radius: 18px;
-      background: linear-gradient(135deg, rgba(255,111,97,0.22), rgba(106,27,154,0.18));
-      display:grid;
-      place-items:center;
-      color: var(--primary);
-      font-size: 1.3rem;
-    }
-    .visual-top h3{
-      font-weight: 950;
-      color: var(--dark);
-      letter-spacing: -0.2px;
-    }
-    .mini{
-      color: var(--muted);
-      font-weight: 600;
-      font-size: .95rem;
-    }
-    .stat-grid{
-      display:grid;
-      grid-template-columns: repeat(2, 1fr);
-      gap: .9rem;
-    }
-    .stat{
-      background: #fff;
-      border: 1px solid rgba(106,27,154,0.08);
-      border-radius: 16px;
-      padding: 1rem;
-      box-shadow: 0 10px 25px rgba(0,0,0,0.05);
-    }
-    .stat .num{
-      font-size: 1.4rem;
-      font-weight: 950;
-      color: var(--primary);
-    }
-    .stat .lbl{
-      font-size: .9rem;
-      color: var(--muted);
-      font-weight: 650;
-    }
 
     /* Products */
     .products-wrap{
@@ -475,21 +439,7 @@
       display:flex;
       gap: .6rem;
       margin-top: .6rem;
-    }
-    .btn.small{
-      padding: .75rem 1rem;
-      font-size: .95rem;
-      font-weight: 900;
-    }
-    .btn.ghost{
-      background: transparent;
-      color: var(--primary);
-      border: 1px solid rgba(106,27,154,0.25);
-      box-shadow: none;
-    }
-    .btn.ghost:hover{
-      background: rgba(106,27,154,0.06);
-      transform: translateY(-2px);
+      flex-wrap: wrap;
     }
 
     /* Choose */
@@ -711,7 +661,7 @@
     }
     .copy-btn:hover{ transform: translateY(-2px); background: rgba(106,27,154,0.06); }
 
-    /* New: Inventory link callout styles */
+    /* Inventory link callout styles */
     .inventory-links{
       display:flex;
       gap: .7rem;
@@ -774,28 +724,28 @@
       <div>
         <h1>Confidence you can carry — because your life is yours.</h1>
         <p>
-          PTheBrandTasers builds everyday self-defense tools that are simple, discreet, and powerful —
+          PTheBrandTasers provides simple, discreet self-defense tools —
           so women can move through the world with more control, more confidence, and more peace.
         </p>
         <div style="display:flex; gap:.8rem; flex-wrap:wrap;">
-          <a href="#inventory" class="btn"><i class="fa-solid fa-images"></i> View Current Inventory</a>
-          <a href="#mission" class="btn secondary"><i class="fa-solid fa-circle-play"></i> Our Promise</a>
+          <a href="#products" class="btn"><i class="fa-solid fa-bolt"></i> Shop the Taser</a>
+          <a href="#inventory" class="btn secondary"><i class="fa-solid fa-images"></i> View Photos</a>
         </div>
 
         <div class="hero-badges">
           <div class="badge"><i class="fa-solid fa-box"></i> Discreet packaging</div>
-          <div class="badge"><i class="fa-solid fa-shield-heart"></i> Education-first</div>
+          <div class="badge"><i class="fa-solid fa-shield-heart"></i> Confidence-first</div>
           <div class="badge"><i class="fa-solid fa-headset"></i> Real support</div>
         </div>
       </div>
 
       <div class="hero-card">
-        <h3>How to shop with us</h3>
+        <h3>How to order</h3>
         <ul>
-          <li><i class="fa-solid fa-check"></i> Browse <strong>Inventory</strong> for current items, photos & descriptions</li>
-          <li><i class="fa-solid fa-check"></i> Pick what you want and message us on TikTok/Facebook</li>
-          <li><i class="fa-solid fa-check"></i> Pay securely with Cash App: <strong>$prettypthebrand</strong></li>
-          <li><i class="fa-solid fa-check"></i> We confirm your order + shipping details</li>
+          <li><i class="fa-solid fa-check"></i> Choose a color: <strong>Pink</strong> or <strong>Blue</strong></li>
+          <li><i class="fa-solid fa-check"></i> Price: <strong>$20</strong> + <strong>$6 shipping</strong> (total <strong>$26</strong>)</li>
+          <li><i class="fa-solid fa-check"></i> Pay with Cash App: <strong>$prettypthebrand</strong></li>
+          <li><i class="fa-solid fa-check"></i> Message us to confirm color + shipping info</li>
         </ul>
       </div>
     </div>
@@ -821,15 +771,15 @@
       <div class="trust-item">
         <div class="trust-icon"><i class="fa-solid fa-shield"></i></div>
         <div>
-          <h4>Quality-focused</h4>
-          <p>Reliable tools built for everyday carry.</p>
+          <h4>Simple + effective</h4>
+          <p>Easy to carry, easy to use.</p>
         </div>
       </div>
       <div class="trust-item">
         <div class="trust-icon"><i class="fa-solid fa-comments"></i></div>
         <div>
-          <h4>Support that cares</h4>
-          <p>Questions? We’re here to help.</p>
+          <h4>Message us anytime</h4>
+          <p>We’ll help you choose the right color.</p>
         </div>
       </div>
     </div>
@@ -848,15 +798,14 @@
     </div>
 
     <div class="mission">
-      <div class="card">
+      <div class="card" style="padding:1.7rem;">
         <p>
-          At PTheBrandTasers, we design self-defense tools that prioritize simplicity, speed, and confidence.
-          Whether you’re walking to your car, traveling, working late, or just living your life —
-          you deserve to feel like you have options.
+          At PTheBrandTasers, we focus on simple self-defense tools that support confidence and personal safety.
+          Whether you’re walking to your car, commuting, or traveling — you deserve options.
         </p>
         <p>
-          We also believe education is empowerment. Every purchase connects you to tips, guides,
-          and resources that help you build awareness and safer habits — without changing who you are.
+          Have questions about the taser, shipping, or what color is available right now?
+          Reach out through our TikTok/Facebook links and we’ll help you.
         </p>
 
         <div class="quote">
@@ -868,31 +817,29 @@
         </div>
       </div>
 
-      <div class="card mission-visual">
-        <div class="visual-top">
+      <div class="card" style="padding:1.7rem; display:grid; gap:1rem;">
+        <div style="display:flex; align-items:center; justify-content:space-between; gap:1rem;">
           <div>
-            <h3>Confidence Toolkit</h3>
-            <div class="mini">Simple tools. Clear guidance. Real support.</div>
+            <h3 style="font-weight:950; color:var(--dark); letter-spacing:-0.2px;">Today’s Offer</h3>
+            <div class="small">Limited colors available</div>
           </div>
-          <div class="mark"><i class="fa-solid fa-sparkles"></i></div>
+          <div style="width:52px;height:52px;border-radius:18px;background:linear-gradient(135deg, rgba(255,111,97,0.22), rgba(106,27,154,0.18));display:grid;place-items:center;color:var(--primary);font-size:1.3rem;">
+            <i class="fa-solid fa-bolt"></i>
+          </div>
         </div>
 
-        <div class="stat-grid">
-          <div class="stat">
-            <div class="num">1–2 steps</div>
-            <div class="lbl">Designed for simplicity</div>
+        <div style="display:grid; grid-template-columns: repeat(2, 1fr); gap:.9rem;">
+          <div style="background:#fff;border:1px solid rgba(106,27,154,0.08);border-radius:16px;padding:1rem;box-shadow:0 10px 25px rgba(0,0,0,0.05);">
+            <div style="font-size:1.4rem;font-weight:950;color:var(--primary);">$20</div>
+            <div class="small">Self Defense Taser</div>
           </div>
-          <div class="stat">
-            <div class="num">Everyday</div>
-            <div class="lbl">Carry-friendly sizing</div>
+          <div style="background:#fff;border:1px solid rgba(106,27,154,0.08);border-radius:16px;padding:1rem;box-shadow:0 10px 25px rgba(0,0,0,0.05);">
+            <div style="font-size:1.4rem;font-weight:950;color:var(--primary);">$6</div>
+            <div class="small">Shipping</div>
           </div>
-          <div class="stat">
-            <div class="num">Guides</div>
-            <div class="lbl">Education included</div>
-          </div>
-          <div class="stat">
-            <div class="num">Support</div>
-            <div class="lbl">We answer questions</div>
+          <div style="background:#fff;border:1px solid rgba(106,27,154,0.08);border-radius:16px;padding:1rem;box-shadow:0 10px 25px rgba(0,0,0,0.05); grid-column: 1 / -1;">
+            <div style="font-size:1.4rem;font-weight:950;color:var(--primary);">$26 total</div>
+            <div class="small">Pink or Blue (message to confirm availability)</div>
           </div>
         </div>
 
@@ -908,10 +855,10 @@
   <section id="products" class="section">
     <div class="section-title">
       <div>
-        <h2>Shop Self-Defense Essentials</h2>
+        <h2>Shop</h2>
         <p>
-          These are popular categories — for the <strong>real-time inventory</strong> (photos + descriptions),
-          visit our Inventory links below.
+          Right now we’re selling one item: <strong>Self Defense Taser</strong>.
+          Choose <strong>Pink</strong> or <strong>Blue</strong> — contact us to confirm what’s in stock.
         </p>
 
         <div class="inventory-links">
@@ -919,118 +866,63 @@
             <i class="fa-solid fa-images"></i> Inventory Gallery
           </a>
           <a class="pill" href="https://share.google/CN1evzK8PPsqQ36SY" target="_blank" rel="noopener">
-            <i class="fa-brands fa-tiktok"></i> TikTok Inventory
+            <i class="fa-brands fa-tiktok"></i> TikTok
           </a>
           <a class="pill" href="https://www.facebook.com/share/1AGmVZEZtG/" target="_blank" rel="noopener">
-            <i class="fa-brands fa-facebook"></i> Facebook Inventory
+            <i class="fa-brands fa-facebook"></i> Facebook
           </a>
         </div>
       </div>
     </div>
 
     <div class="products-wrap">
-      <div class="product-grid">
-
-        <!-- Product 1 -->
+      <div class="product-grid" style="grid-template-columns: repeat(1, minmax(0, 520px)); justify-content: center;">
+        <!-- Single Product -->
         <div class="product-card">
-          <div class="tag">Best Seller</div>
+          <div class="tag">In Stock (Check colors)</div>
           <div class="p-icon"><i class="fa-solid fa-bolt"></i></div>
-          <h3>Mini Taser</h3>
-          <p>Palm-sized power with a safety switch. Built for everyday carry.</p>
+          <h3>Self Defense Taser</h3>
+          <p>
+            Compact and easy to carry. Available colors: <strong>Pink</strong> / <strong>Blue</strong>.
+            Message us to confirm inventory and ask any questions.
+          </p>
+
           <div class="meta">
             <div>
-              <div class="price">$49.99</div>
-              <div class="small">Rechargeable • Compact</div>
+              <div class="price">$20</div>
+              <div class="small">+ $6 shipping • Total: $26</div>
             </div>
           </div>
+
           <div class="actions">
-            <button class="btn small" data-product="Mini Taser" data-price="49.99" data-link="https://buy.stripe.com/REPLACE_WITH_YOUR_LINK">
-              <i class="fa-solid fa-lock"></i> Buy Now
+            <button class="btn small" data-product="Self Defense Taser" data-price="26.00">
+              <i class="fa-solid fa-bag-shopping"></i> Buy / Pay Info
             </button>
-            <button class="btn small ghost" data-learn="Mini Taser">
-              <i class="fa-solid fa-circle-question"></i> Details
-            </button>
+            <a class="btn small ghost" href="#contact">
+              <i class="fa-solid fa-message"></i> Contact
+            </a>
+          </div>
+
+          <div class="pay-note" style="margin-top:.8rem;">
+            <p style="color:#4b5563; font-weight:650;">
+              <strong>How to buy:</strong> Pay <strong>$26</strong> via Cash App to <strong>$prettypthebrand</strong>.
+              In the note, write: <strong>Taser</strong> + your <strong>color</strong> (pink/blue) + your <strong>name</strong>.
+              Then message us your shipping address.
+            </p>
           </div>
         </div>
-
-        <!-- Product 2 -->
-        <div class="product-card">
-          <div class="tag">Night Ready</div>
-          <div class="p-icon"><i class="fa-solid fa-lightbulb"></i></div>
-          <h3>Stun Flashlight</h3>
-          <p>Bright LED flashlight with built-in stun capability for added confidence.</p>
-          <div class="meta">
-            <div>
-              <div class="price">$59.99</div>
-              <div class="small">LED • Durable</div>
-            </div>
-          </div>
-          <div class="actions">
-            <button class="btn small" data-product="Stun Flashlight" data-price="59.99" data-link="https://buy.stripe.com/REPLACE_WITH_YOUR_LINK">
-              <i class="fa-solid fa-lock"></i> Buy Now
-            </button>
-            <button class="btn small ghost" data-learn="Stun Flashlight">
-              <i class="fa-solid fa-circle-question"></i> Details
-            </button>
-          </div>
-        </div>
-
-        <!-- Product 3 -->
-        <div class="product-card">
-          <div class="tag">Quick Access</div>
-          <div class="p-icon"><i class="fa-solid fa-spray-can-sparkles"></i></div>
-          <h3>Pepper Spray Keychain</h3>
-          <p>Quick-release keychain with UV dye to help identify attackers.</p>
-          <div class="meta">
-            <div>
-              <div class="price">$19.99</div>
-              <div class="small">Keychain • UV dye</div>
-            </div>
-          </div>
-          <div class="actions">
-            <button class="btn small" data-product="Pepper Spray Keychain" data-price="19.99" data-link="https://buy.stripe.com/REPLACE_WITH_YOUR_LINK">
-              <i class="fa-solid fa-lock"></i> Buy Now
-            </button>
-            <button class="btn small ghost" data-learn="Pepper Spray">
-              <i class="fa-solid fa-circle-question"></i> Details
-            </button>
-          </div>
-        </div>
-
-        <!-- Product 4 -->
-        <div class="product-card">
-          <div class="tag">Loud + Simple</div>
-          <div class="p-icon"><i class="fa-solid fa-volume-high"></i></div>
-          <h3>Personal Alarm</h3>
-          <p>130dB alarm with a pull-pin. Easy, fast, and attention-grabbing.</p>
-          <div class="meta">
-            <div>
-              <div class="price">$14.99</div>
-              <div class="small">130dB • Keychain</div>
-            </div>
-          </div>
-          <div class="actions">
-            <button class="btn small" data-product="Personal Alarm" data-price="14.99" data-link="https://buy.stripe.com/REPLACE_WITH_YOUR_LINK">
-              <i class="fa-solid fa-lock"></i> Buy Now
-            </button>
-            <button class="btn small ghost" data-learn="Personal Alarm">
-              <i class="fa-solid fa-circle-question"></i> Details
-            </button>
-          </div>
-        </div>
-
       </div>
     </div>
   </section>
 
-  <!-- INVENTORY SECTION (New, dedicated section) -->
+  <!-- INVENTORY SECTION -->
   <section id="inventory" class="section">
     <div class="section-title">
       <div>
         <h2>Current Inventory (Photos + Descriptions)</h2>
         <p>
-          For the most up-to-date inventory, colors, bundles, and product photos with descriptions,
-          check the links below. This is where we post what’s available right now.
+          See current photos, colors, and descriptions here. If you want a specific color,
+          message us and we’ll confirm what’s available.
         </p>
 
         <div class="inventory-links">
@@ -1038,7 +930,7 @@
             <i class="fa-solid fa-images"></i> Inventory Gallery
           </a>
           <a class="pill" href="https://share.google/CN1evzK8PPsqQ36SY" target="_blank" rel="noopener">
-            <i class="fa-brands fa-tiktok"></i> Source: TikTok
+            <i class="fa-brands fa-tiktok"></i> TikTok
           </a>
           <a class="pill" href="https://www.facebook.com/share/1AGmVZEZtG/" target="_blank" rel="noopener">
             <i class="fa-brands fa-facebook"></i> Facebook
@@ -1047,7 +939,7 @@
 
         <p class="note" style="margin-top: 1rem;">
           <i class="fa-solid fa-message"></i>
-          See something you want? Message us using the links above with the item name and screenshot.
+          See a taser you want? Message us with the color (<strong>Pink</strong> / <strong>Blue</strong>) and a screenshot.
         </p>
       </div>
     </div>
@@ -1056,7 +948,7 @@
       <div class="pay-note">
         <p style="color:#4b5563; font-weight:650;">
           <strong>Quick order steps:</strong>
-          1) Browse inventory → 2) Message us the item → 3) Pay → 4) We confirm shipping details.
+          1) Browse photos → 2) Choose color → 3) Pay $26 → 4) Message shipping details → 5) We confirm + ship.
         </p>
       </div>
     </div>
@@ -1067,25 +959,25 @@
     <div class="section-title">
       <div>
         <h2>How to Choose</h2>
-        <p>Not sure where to start? Pick what fits your lifestyle — the best tool is the one you’ll actually carry.</p>
+        <p>Pick the color you love — then message us to confirm what’s available today.</p>
       </div>
     </div>
 
     <div class="choose-grid">
       <div class="card choose">
-        <div class="cicon"><i class="fa-solid fa-person-walking"></i></div>
-        <h4>Everyday carry</h4>
-        <p>Choose compact options you’ll keep on you: keychain pepper spray or a personal alarm.</p>
+        <div class="cicon"><i class="fa-solid fa-palette"></i></div>
+        <h4>Pick a color</h4>
+        <p>Available colors: <strong>Pink</strong> and <strong>Blue</strong>. Stock changes fast.</p>
       </div>
       <div class="card choose">
-        <div class="cicon"><i class="fa-solid fa-moon"></i></div>
-        <h4>Night / commuting</h4>
-        <p>If you walk to your car or travel often, the stun flashlight adds visibility + confidence.</p>
+        <div class="cicon"><i class="fa-solid fa-message"></i></div>
+        <h4>Message to confirm</h4>
+        <p>Send a screenshot and your color choice. We’ll confirm inventory and next steps.</p>
       </div>
       <div class="card choose">
-        <div class="cicon"><i class="fa-solid fa-graduation-cap"></i></div>
-        <h4>Confidence + education</h4>
-        <p>Tools work best with awareness. We include guides so you feel ready, not overwhelmed.</p>
+        <div class="cicon"><i class="fa-solid fa-money-bill-wave"></i></div>
+        <h4>Pay + ship</h4>
+        <p>Pay <strong>$26 total</strong> ($20 + $6 shipping). Then send your shipping info.</p>
       </div>
     </div>
   </section>
@@ -1096,7 +988,7 @@
       <div>
         <h2>Payment Options</h2>
         <p>
-          Pay with Cash App using the information below. (You can still add Stripe checkout links later.)
+          For the Self Defense Taser: <strong>$20</strong> + <strong>$6 shipping</strong> (total <strong>$26</strong>).
         </p>
       </div>
     </div>
@@ -1104,7 +996,7 @@
     <div class="card" style="padding: 1.4rem;">
       <div class="pay-note">
         <p style="color:#4b5563; font-weight:650;">
-          <strong>Cash App payments</strong> can be sent to the owner at:
+          <strong>Cash App</strong> payments can be sent to the owner at:
         </p>
 
         <div style="margin-top:.2rem;">
@@ -1117,8 +1009,12 @@
         </div>
 
         <p class="note" style="margin-top:.9rem;">
-          <i class="fa-solid fa-circle-info"></i>
-          Tip: In your Cash App note, include the product name + your email/phone so we can match your order.
+          <i class="fa-solid fa-pen"></i>
+          In your Cash App note, include: <strong>Taser</strong> + <strong>Pink/Blue</strong> + your <strong>Name</strong>.
+        </p>
+        <p class="note" style="margin-top:.4rem;">
+          <i class="fa-solid fa-message"></i>
+          Then message us your shipping address on TikTok/Facebook so we can confirm your order.
         </p>
       </div>
     </div>
@@ -1128,12 +1024,12 @@
   <section class="section">
     <div class="cta">
       <div>
-        <h3>Join the PTheBrandTasers Community</h3>
-        <p>Get practical safety tips, product drops, and updates. Empowerment is a habit — not a moment.</p>
+        <h3>Ready to order?</h3>
+        <p>View the latest photos first, then message us for availability and quick checkout.</p>
       </div>
       <div class="cta-actions">
-        <a href="#inventory" class="btn"><i class="fa-solid fa-images"></i> View Inventory</a>
-        <a href="#pay" class="btn secondary"><i class="fa-solid fa-money-bill-wave"></i> Pay</a>
+        <a href="#inventory" class="btn"><i class="fa-solid fa-images"></i> View Photos</a>
+        <a href="#contact" class="btn secondary"><i class="fa-solid fa-message"></i> Contact</a>
       </div>
     </div>
   </section>
@@ -1145,11 +1041,9 @@
         <div class="logo"><div class="logo-badge">PT</div> PTheBrand<span>Tasers</span></div>
 
         <p style="margin-top:.8rem;">
-          <i class="fa-solid fa-envelope"></i> info@pthebrandtasers.com<br />
           <i class="fa-solid fa-phone"></i> Message us on TikTok / Facebook for fastest response
         </p>
 
-        <!-- Updated: Contact / inventory links -->
         <p style="margin-top:.9rem; line-height:1.55;">
           <i class="fa-solid fa-images"></i>
           Inventory Gallery:
@@ -1158,13 +1052,13 @@
           </a>
           <br />
           <i class="fa-brands fa-tiktok"></i>
-          Source: TikTok
+          TikTok:
           <a href="https://share.google/CN1evzK8PPsqQ36SY" target="_blank" rel="noopener" style="color:#ffffff; text-decoration: underline;">
             https://share.google/CN1evzK8PPsqQ36SY
           </a>
           <br />
           <i class="fa-brands fa-facebook"></i>
-          Facebook
+          Facebook:
           <a href="https://www.facebook.com/share/1AGmVZEZtG/" target="_blank" rel="noopener" style="color:#ffffff; text-decoration: underline;">
             https://www.facebook.com/share/1AGmVZEZtG/
           </a>
@@ -1174,7 +1068,6 @@
           <a href="https://share.google/wG4ZMwR2a81Rkp1ez" target="_blank" rel="noopener" aria-label="Inventory Gallery"><i class="fa-solid fa-images"></i></a>
           <a href="https://share.google/CN1evzK8PPsqQ36SY" target="_blank" rel="noopener" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
           <a href="https://www.facebook.com/share/1AGmVZEZtG/" target="_blank" rel="noopener" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
-          <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
         </div>
       </div>
 
@@ -1202,7 +1095,7 @@
     </div>
   </footer>
 
-  <!-- CHECKOUT MODAL (Stripe Link approach + Cash App info) -->
+  <!-- CHECKOUT MODAL (Cash App info) -->
   <div class="modal-backdrop" id="modalBackdrop" role="dialog" aria-modal="true" aria-label="Checkout modal">
     <div class="modal">
       <div class="modal-head">
@@ -1213,41 +1106,30 @@
         <div class="modal-row">
           <div>
             <strong id="modalProduct">Product</strong><br />
-            <span class="small">Choose how you’d like to pay</span>
+            <span class="small">Pay with Cash App</span>
           </div>
           <div style="text-align:right;">
-            <strong id="modalPrice">$0.00</strong><br />
-            <span class="small">Taxes/shipping at checkout</span>
+            <strong id="modalPrice">$26.00</strong><br />
+            <span class="small">$20 + $6 shipping</span>
           </div>
         </div>
 
         <div class="pay-note">
           <p style="color:#4b5563; font-weight:650;">
-            <strong>Pay with Cash App:</strong> send payment to
+            <strong>Pay with Cash App:</strong> send <strong>$26</strong> to
             <span class="cash-tag" style="margin-left:.35rem;"><i class="fa-solid fa-dollar-sign"></i> $prettypthebrand</span>
           </p>
           <p class="note" style="margin-top:.6rem;">
             <i class="fa-solid fa-pen"></i>
-            In the Cash App note, include the product name + your email/phone so we can confirm your order.
+            In the note, include: <strong>Taser</strong> + <strong>Pink/Blue</strong> + your <strong>Name</strong>.
           </p>
           <p class="note" style="margin-top:.6rem;">
-            <i class="fa-solid fa-images"></i>
-            Want to double-check photos/descriptions first? Visit:
-            <a href="https://share.google/wG4ZMwR2a81Rkp1ez" target="_blank" rel="noopener" style="color: var(--primary); font-weight: 900;">
-              Inventory Gallery
-            </a>
+            <i class="fa-solid fa-message"></i>
+            After paying, message us your shipping address on TikTok/Facebook to confirm your order.
           </p>
         </div>
 
-        <p class="note">
-          <i class="fa-solid fa-lock"></i>
-          Optional: If you add Stripe Payment Links later, the “Pay Securely (Stripe)” button below can take customers to Stripe checkout.
-        </p>
-
         <div class="modal-actions">
-          <a class="btn small" id="modalPay" href="#" target="_blank" rel="noopener">
-            <i class="fa-solid fa-credit-card"></i> Pay Securely (Stripe)
-          </a>
           <button class="btn small ghost" id="modalKeepShopping" type="button">
             <i class="fa-solid fa-bag-shopping"></i> Keep Shopping
           </button>
@@ -1294,20 +1176,18 @@
       });
     }
 
-    // Checkout modal logic (Stripe Payment Link style)
+    // Checkout modal logic (now simplified for single item)
     const modalBackdrop = document.getElementById('modalBackdrop');
     const modalClose = document.getElementById('modalClose');
     const modalKeepShopping = document.getElementById('modalKeepShopping');
     const modalTitle = document.getElementById('modalTitle');
     const modalProduct = document.getElementById('modalProduct');
     const modalPrice = document.getElementById('modalPrice');
-    const modalPay = document.getElementById('modalPay');
 
-    function openModal({ product, price, link }) {
+    function openModal({ product, price }) {
       modalTitle.textContent = `Checkout: ${product}`;
       modalProduct.textContent = product;
       modalPrice.textContent = `$${Number(price).toFixed(2)}`;
-      modalPay.href = link || "#";
       modalBackdrop.style.display = 'flex';
     }
 
@@ -1315,12 +1195,12 @@
       modalBackdrop.style.display = 'none';
     }
 
+    // Only one "Buy" button now
     document.querySelectorAll('button[data-product]').forEach(btn => {
       btn.addEventListener('click', () => {
         openModal({
           product: btn.dataset.product,
-          price: btn.dataset.price,
-          link: btn.dataset.link
+          price: btn.dataset.price
         });
       });
     });
@@ -1329,13 +1209,6 @@
     modalKeepShopping.addEventListener('click', closeModal);
     modalBackdrop.addEventListener('click', (e) => {
       if (e.target === modalBackdrop) closeModal();
-    });
-
-    // Optional: product detail buttons (simple alert placeholder)
-    document.querySelectorAll('button[data-learn]').forEach(btn => {
-      btn.addEventListener('click', () => {
-        alert(`Details for: ${btn.dataset.learn}\n\nTip: Replace this with a real product details section or modal.`);
-      });
     });
   </script>
 </body>
