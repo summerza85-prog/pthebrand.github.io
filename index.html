@@ -575,6 +575,7 @@
       margin: .4rem 0;
       font-weight: 650;
       opacity: 0.92;
+      word-break: break-word;
     }
     .footer-links a:hover{ color: white; opacity: 1; }
     .social a{
@@ -669,6 +670,47 @@
     }
     .note i{ color: var(--primary); margin-right: .45rem; }
 
+    /* Added: Payment Notice styles */
+    .pay-note{
+      border: 1px solid rgba(106,27,154,0.10);
+      background: rgba(248,240,252,0.45);
+      border-radius: 16px;
+      padding: 1rem;
+    }
+    .pay-note strong{
+      color: var(--dark);
+      font-weight: 950;
+    }
+    .cash-tag{
+      display:inline-flex;
+      align-items:center;
+      gap:.5rem;
+      margin-top:.6rem;
+      padding: .55rem .8rem;
+      border-radius: 999px;
+      background: rgba(16,185,129,0.12);
+      border: 1px solid rgba(16,185,129,0.22);
+      color: #065f46;
+      font-weight: 950;
+      letter-spacing: 0.2px;
+      user-select: all;
+    }
+    .copy-btn{
+      display:inline-flex;
+      align-items:center;
+      gap:.5rem;
+      margin-left:.6rem;
+      padding: .55rem .8rem;
+      border-radius: 999px;
+      border: 1px solid rgba(106,27,154,0.22);
+      background: white;
+      color: var(--primary);
+      font-weight: 900;
+      cursor:pointer;
+      transition: transform .2s ease, background .2s ease;
+    }
+    .copy-btn:hover{ transform: translateY(-2px); background: rgba(106,27,154,0.06); }
+
     /* Responsive */
     @media (max-width: 980px){
       .hero-wrap{ grid-template-columns: 1fr; }
@@ -686,6 +728,7 @@
       .trustbar-inner{ grid-template-columns: 1fr; }
       .product-grid{ grid-template-columns: 1fr; }
       .cta{ flex-direction: column; align-items:flex-start; }
+      .copy-btn{ margin-left: 0; margin-top: .6rem; }
     }
   </style>
 </head>
@@ -703,12 +746,13 @@
         <a href="#mission">Mission</a>
         <a href="#products">Shop</a>
         <a href="#choose">How to Choose</a>
+        <a href="#pay">Pay</a>
         <a href="#contact">Contact</a>
       </div>
 
       <div class="nav-cta">
         <a class="pill" href="#products"><i class="fa-solid fa-bag-shopping"></i> Shop</a>
-        <a class="pill" href="#contact"><i class="fa-solid fa-envelope"></i> Support</a>
+        <a class="pill" href="#pay"><i class="fa-solid fa-money-bill-wave"></i> Pay</a>
       </div>
 
       <button class="menu-toggle" aria-label="Open menu"><i class="fas fa-bars"></i></button>
@@ -857,8 +901,7 @@
       <div>
         <h2>Shop Self-Defense Essentials</h2>
         <p>
-          Compact, discreet, and designed to support your confidence. Add a product to checkout —
-          or use Stripe Payment Links for instant secure payments (no backend needed).
+          Compact, discreet, and designed to support your confidence. Tap “Buy Now” to see checkout options.
         </p>
       </div>
     </div>
@@ -879,6 +922,7 @@
             </div>
           </div>
           <div class="actions">
+            <!-- Keep Stripe link placeholder if you add it later -->
             <button class="btn small" data-product="PS Mini Taser" data-price="49.99" data-link="https://buy.stripe.com/REPLACE_WITH_YOUR_LINK">
               <i class="fa-solid fa-lock"></i> Buy Now
             </button>
@@ -986,6 +1030,40 @@
     </div>
   </section>
 
+  <!-- PAY SECTION (Added Cash App info) -->
+  <section id="pay" class="section">
+    <div class="section-title">
+      <div>
+        <h2>Payment Options</h2>
+        <p>
+          Prefer to pay with Cash App? Use the information below. (You can still add Stripe checkout links later.)
+        </p>
+      </div>
+    </div>
+
+    <div class="card" style="padding: 1.4rem;">
+      <div class="pay-note">
+        <p style="color:#4b5563; font-weight:650;">
+          <strong>Cash App payments</strong> can be sent to the owner at:
+        </p>
+
+        <div style="margin-top:.2rem;">
+          <span class="cash-tag" id="cashTag">
+            <i class="fa-solid fa-dollar-sign"></i> $prettypthebrand
+          </span>
+          <button class="copy-btn" id="copyCash" type="button">
+            <i class="fa-solid fa-copy"></i> Copy
+          </button>
+        </div>
+
+        <p class="note" style="margin-top:.9rem;">
+          <i class="fa-solid fa-circle-info"></i>
+          Tip: In your Cash App note, include the product name + your email/phone so we can match your order.
+        </p>
+      </div>
+    </div>
+  </section>
+
   <!-- CTA -->
   <section class="section">
     <div class="cta">
@@ -1005,13 +1083,30 @@
     <div class="footer-inner">
       <div>
         <div class="logo"><div class="logo-badge">PS</div> Tasers <span>Co.</span></div>
+
         <p style="margin-top:.8rem;">
           <i class="fa-solid fa-envelope"></i> info@pstasers.com<br />
           <i class="fa-solid fa-phone"></i> 1-800-SAFE
         </p>
+
+        <!-- Added: Source links as contact info -->
+        <p style="margin-top:.9rem; line-height:1.55;">
+          <i class="fa-brands fa-facebook"></i>
+          Source: Facebook
+          <a href="https://share.google/G9NCFmX6c1lxf3zx4" target="_blank" rel="noopener" style="color:#ffffff; text-decoration: underline;">
+            https://share.google/G9NCFmX6c1lxf3zx4
+          </a>
+          <br />
+          <i class="fa-brands fa-instagram"></i>
+          Source: Instagram
+          <a href="https://share.google/ZrjyoAsN4vCf5YTxZ" target="_blank" rel="noopener" style="color:#ffffff; text-decoration: underline;">
+            https://share.google/ZrjyoAsN4vCf5YTxZ
+          </a>
+        </p>
+
         <div class="social" style="margin-top:.9rem;">
-          <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
-          <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="https://share.google/G9NCFmX6c1lxf3zx4" target="_blank" rel="noopener" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+          <a href="https://share.google/ZrjyoAsN4vCf5YTxZ" target="_blank" rel="noopener" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
           <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
           <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
         </div>
@@ -1022,6 +1117,7 @@
         <a href="#mission">Mission</a>
         <a href="#products">Shop</a>
         <a href="#choose">How to Choose</a>
+        <a href="#pay">Pay</a>
       </div>
 
       <div class="footer-links">
@@ -1040,7 +1136,7 @@
     </div>
   </footer>
 
-  <!-- CHECKOUT MODAL (Stripe Link approach) -->
+  <!-- CHECKOUT MODAL (Stripe Link approach + Cash App info) -->
   <div class="modal-backdrop" id="modalBackdrop" role="dialog" aria-modal="true" aria-label="Checkout modal">
     <div class="modal">
       <div class="modal-head">
@@ -1051,7 +1147,7 @@
         <div class="modal-row">
           <div>
             <strong id="modalProduct">Product</strong><br />
-            <span class="small">Secure checkout via Stripe</span>
+            <span class="small">Choose how you’d like to pay</span>
           </div>
           <div style="text-align:right;">
             <strong id="modalPrice">$0.00</strong><br />
@@ -1059,16 +1155,28 @@
           </div>
         </div>
 
+        <!-- Added: Cash App instructions inside modal -->
+        <div class="pay-note">
+          <p style="color:#4b5563; font-weight:650;">
+            <strong>Pay with Cash App:</strong> send payment to
+            <span class="cash-tag" style="margin-left:.35rem;"><i class="fa-solid fa-dollar-sign"></i> $prettypthebrand</span>
+          </p>
+          <p class="note" style="margin-top:.6rem;">
+            <i class="fa-solid fa-pen"></i>
+            In the Cash App note, include the product name + your email/phone so we can confirm your order.
+          </p>
+        </div>
+
         <p class="note">
           <i class="fa-solid fa-lock"></i>
-          To accept payments safely, your checkout should be hosted (Stripe Payment Link) or created from a backend (Stripe Checkout Session).
+          Optional: If you add Stripe Payment Links later, the “Pay Securely” button below can take customers to Stripe checkout.
         </p>
 
         <div class="modal-actions">
           <a class="btn small" id="modalPay" href="#" target="_blank" rel="noopener">
-            <i class="fa-solid fa-credit-card"></i> Pay Securely
+            <i class="fa-solid fa-credit-card"></i> Pay Securely (Stripe)
           </a>
-          <button class="btn small ghost" id="modalKeepShopping">
+          <button class="btn small ghost" id="modalKeepShopping" type="button">
             <i class="fa-solid fa-bag-shopping"></i> Keep Shopping
           </button>
         </div>
@@ -1096,6 +1204,23 @@
       navLinks.style.borderBottomRightRadius = '16px';
       navLinks.style.gap = '1rem';
     });
+
+    // Cash App copy button
+    const copyBtn = document.getElementById('copyCash');
+    const cashTagText = "$prettypthebrand";
+    if (copyBtn) {
+      copyBtn.addEventListener('click', async () => {
+        try {
+          await navigator.clipboard.writeText(cashTagText);
+          copyBtn.innerHTML = '<i class="fa-solid fa-check"></i> Copied';
+          setTimeout(() => {
+            copyBtn.innerHTML = '<i class="fa-solid fa-copy"></i> Copy';
+          }, 1500);
+        } catch (e) {
+          alert("Couldn't copy automatically. Please copy manually: " + cashTagText);
+        }
+      });
+    }
 
     // Checkout modal logic (Stripe Payment Link style)
     const modalBackdrop = document.getElementById('modalBackdrop');
