@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>PS Tasers – Confidence You Can Carry</title>
+  <title>PTheBrandTasers – Confidence You Can Carry</title>
 
   <!-- Google Fonts & Font Awesome -->
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet" />
@@ -670,7 +670,7 @@
     }
     .note i{ color: var(--primary); margin-right: .45rem; }
 
-    /* Added: Payment Notice styles */
+    /* Payment Notice styles */
     .pay-note{
       border: 1px solid rgba(106,27,154,0.10);
       background: rgba(248,240,252,0.45);
@@ -711,6 +711,14 @@
     }
     .copy-btn:hover{ transform: translateY(-2px); background: rgba(106,27,154,0.06); }
 
+    /* New: Inventory link callout styles */
+    .inventory-links{
+      display:flex;
+      gap: .7rem;
+      flex-wrap: wrap;
+      margin-top: 1rem;
+    }
+
     /* Responsive */
     @media (max-width: 980px){
       .hero-wrap{ grid-template-columns: 1fr; }
@@ -737,8 +745,8 @@
   <nav>
     <div class="nav-container">
       <div class="logo">
-        <div class="logo-badge">PS</div>
-        Tasers <span>Co.</span>
+        <div class="logo-badge">PT</div>
+        PTheBrand<span>Tasers</span>
       </div>
 
       <div class="nav-links">
@@ -746,12 +754,13 @@
         <a href="#mission">Mission</a>
         <a href="#products">Shop</a>
         <a href="#choose">How to Choose</a>
+        <a href="#inventory">Inventory</a>
         <a href="#pay">Pay</a>
         <a href="#contact">Contact</a>
       </div>
 
       <div class="nav-cta">
-        <a class="pill" href="#products"><i class="fa-solid fa-bag-shopping"></i> Shop</a>
+        <a class="pill" href="#inventory"><i class="fa-solid fa-images"></i> Inventory</a>
         <a class="pill" href="#pay"><i class="fa-solid fa-money-bill-wave"></i> Pay</a>
       </div>
 
@@ -765,11 +774,11 @@
       <div>
         <h1>Confidence you can carry — because your life is yours.</h1>
         <p>
-          PS Tasers builds everyday self-defense tools that are simple, discreet, and powerful —
+          PTheBrandTasers builds everyday self-defense tools that are simple, discreet, and powerful —
           so women can move through the world with more control, more confidence, and more peace.
         </p>
         <div style="display:flex; gap:.8rem; flex-wrap:wrap;">
-          <a href="#products" class="btn"><i class="fa-solid fa-bolt"></i> Shop Best Sellers</a>
+          <a href="#inventory" class="btn"><i class="fa-solid fa-images"></i> View Current Inventory</a>
           <a href="#mission" class="btn secondary"><i class="fa-solid fa-circle-play"></i> Our Promise</a>
         </div>
 
@@ -781,12 +790,12 @@
       </div>
 
       <div class="hero-card">
-        <h3>Made for real life</h3>
+        <h3>How to shop with us</h3>
         <ul>
-          <li><i class="fa-solid fa-check"></i> Easy-to-use designs (no complicated steps)</li>
-          <li><i class="fa-solid fa-check"></i> Everyday carry sizes for purse, pocket, or car</li>
-          <li><i class="fa-solid fa-check"></i> Safety tips + guides included with every order</li>
-          <li><i class="fa-solid fa-check"></i> Built to help you feel ready — not afraid</li>
+          <li><i class="fa-solid fa-check"></i> Browse <strong>Inventory</strong> for current items, photos & descriptions</li>
+          <li><i class="fa-solid fa-check"></i> Pick what you want and message us on TikTok/Facebook</li>
+          <li><i class="fa-solid fa-check"></i> Pay securely with Cash App: <strong>$prettypthebrand</strong></li>
+          <li><i class="fa-solid fa-check"></i> We confirm your order + shipping details</li>
         </ul>
       </div>
     </div>
@@ -841,7 +850,7 @@
     <div class="mission">
       <div class="card">
         <p>
-          At PS Tasers, we design self-defense tools that prioritize simplicity, speed, and confidence.
+          At PTheBrandTasers, we design self-defense tools that prioritize simplicity, speed, and confidence.
           Whether you’re walking to your car, traveling, working late, or just living your life —
           you deserve to feel like you have options.
         </p>
@@ -901,8 +910,21 @@
       <div>
         <h2>Shop Self-Defense Essentials</h2>
         <p>
-          Compact, discreet, and designed to support your confidence. Tap “Buy Now” to see checkout options.
+          These are popular categories — for the <strong>real-time inventory</strong> (photos + descriptions),
+          visit our Inventory links below.
         </p>
+
+        <div class="inventory-links">
+          <a class="pill" href="https://share.google/wG4ZMwR2a81Rkp1ez" target="_blank" rel="noopener">
+            <i class="fa-solid fa-images"></i> Inventory Gallery
+          </a>
+          <a class="pill" href="https://share.google/CN1evzK8PPsqQ36SY" target="_blank" rel="noopener">
+            <i class="fa-brands fa-tiktok"></i> TikTok Inventory
+          </a>
+          <a class="pill" href="https://www.facebook.com/share/1AGmVZEZtG/" target="_blank" rel="noopener">
+            <i class="fa-brands fa-facebook"></i> Facebook Inventory
+          </a>
+        </div>
       </div>
     </div>
 
@@ -913,7 +935,7 @@
         <div class="product-card">
           <div class="tag">Best Seller</div>
           <div class="p-icon"><i class="fa-solid fa-bolt"></i></div>
-          <h3>PS Mini Taser</h3>
+          <h3>Mini Taser</h3>
           <p>Palm-sized power with a safety switch. Built for everyday carry.</p>
           <div class="meta">
             <div>
@@ -922,8 +944,7 @@
             </div>
           </div>
           <div class="actions">
-            <!-- Keep Stripe link placeholder if you add it later -->
-            <button class="btn small" data-product="PS Mini Taser" data-price="49.99" data-link="https://buy.stripe.com/REPLACE_WITH_YOUR_LINK">
+            <button class="btn small" data-product="Mini Taser" data-price="49.99" data-link="https://buy.stripe.com/REPLACE_WITH_YOUR_LINK">
               <i class="fa-solid fa-lock"></i> Buy Now
             </button>
             <button class="btn small ghost" data-learn="Mini Taser">
@@ -1002,6 +1023,45 @@
     </div>
   </section>
 
+  <!-- INVENTORY SECTION (New, dedicated section) -->
+  <section id="inventory" class="section">
+    <div class="section-title">
+      <div>
+        <h2>Current Inventory (Photos + Descriptions)</h2>
+        <p>
+          For the most up-to-date inventory, colors, bundles, and product photos with descriptions,
+          check the links below. This is where we post what’s available right now.
+        </p>
+
+        <div class="inventory-links">
+          <a class="pill" href="https://share.google/wG4ZMwR2a81Rkp1ez" target="_blank" rel="noopener">
+            <i class="fa-solid fa-images"></i> Inventory Gallery
+          </a>
+          <a class="pill" href="https://share.google/CN1evzK8PPsqQ36SY" target="_blank" rel="noopener">
+            <i class="fa-brands fa-tiktok"></i> Source: TikTok
+          </a>
+          <a class="pill" href="https://www.facebook.com/share/1AGmVZEZtG/" target="_blank" rel="noopener">
+            <i class="fa-brands fa-facebook"></i> Facebook
+          </a>
+        </div>
+
+        <p class="note" style="margin-top: 1rem;">
+          <i class="fa-solid fa-message"></i>
+          See something you want? Message us using the links above with the item name and screenshot.
+        </p>
+      </div>
+    </div>
+
+    <div class="card" style="padding: 1.4rem;">
+      <div class="pay-note">
+        <p style="color:#4b5563; font-weight:650;">
+          <strong>Quick order steps:</strong>
+          1) Browse inventory → 2) Message us the item → 3) Pay → 4) We confirm shipping details.
+        </p>
+      </div>
+    </div>
+  </section>
+
   <!-- HOW TO CHOOSE -->
   <section id="choose" class="section">
     <div class="section-title">
@@ -1030,13 +1090,13 @@
     </div>
   </section>
 
-  <!-- PAY SECTION (Added Cash App info) -->
+  <!-- PAY SECTION -->
   <section id="pay" class="section">
     <div class="section-title">
       <div>
         <h2>Payment Options</h2>
         <p>
-          Prefer to pay with Cash App? Use the information below. (You can still add Stripe checkout links later.)
+          Pay with Cash App using the information below. (You can still add Stripe checkout links later.)
         </p>
       </div>
     </div>
@@ -1068,12 +1128,12 @@
   <section class="section">
     <div class="cta">
       <div>
-        <h3>Join the PS Community</h3>
-        <p>Get practical safety tips, product drops, and workshop announcements. Empowerment is a habit — not a moment.</p>
+        <h3>Join the PTheBrandTasers Community</h3>
+        <p>Get practical safety tips, product drops, and updates. Empowerment is a habit — not a moment.</p>
       </div>
       <div class="cta-actions">
-        <a href="#contact" class="btn"><i class="fa-solid fa-envelope"></i> Get Updates</a>
-        <a href="#products" class="btn secondary"><i class="fa-solid fa-bag-shopping"></i> Shop</a>
+        <a href="#inventory" class="btn"><i class="fa-solid fa-images"></i> View Inventory</a>
+        <a href="#pay" class="btn secondary"><i class="fa-solid fa-money-bill-wave"></i> Pay</a>
       </div>
     </div>
   </section>
@@ -1082,32 +1142,38 @@
   <footer id="contact">
     <div class="footer-inner">
       <div>
-        <div class="logo"><div class="logo-badge">PS</div> Tasers <span>Co.</span></div>
+        <div class="logo"><div class="logo-badge">PT</div> PTheBrand<span>Tasers</span></div>
 
         <p style="margin-top:.8rem;">
-          <i class="fa-solid fa-envelope"></i> info@pstasers.com<br />
-          <i class="fa-solid fa-phone"></i> 1-800-SAFE
+          <i class="fa-solid fa-envelope"></i> info@pthebrandtasers.com<br />
+          <i class="fa-solid fa-phone"></i> Message us on TikTok / Facebook for fastest response
         </p>
 
-        <!-- Added: Source links as contact info -->
+        <!-- Updated: Contact / inventory links -->
         <p style="margin-top:.9rem; line-height:1.55;">
-          <i class="fa-brands fa-facebook"></i>
-          Source: Facebook
-          <a href="https://share.google/G9NCFmX6c1lxf3zx4" target="_blank" rel="noopener" style="color:#ffffff; text-decoration: underline;">
-            https://share.google/G9NCFmX6c1lxf3zx4
+          <i class="fa-solid fa-images"></i>
+          Inventory Gallery:
+          <a href="https://share.google/wG4ZMwR2a81Rkp1ez" target="_blank" rel="noopener" style="color:#ffffff; text-decoration: underline;">
+            https://share.google/wG4ZMwR2a81Rkp1ez
           </a>
           <br />
-          <i class="fa-brands fa-instagram"></i>
-          Source: Instagram
-          <a href="https://share.google/ZrjyoAsN4vCf5YTxZ" target="_blank" rel="noopener" style="color:#ffffff; text-decoration: underline;">
-            https://share.google/ZrjyoAsN4vCf5YTxZ
+          <i class="fa-brands fa-tiktok"></i>
+          Source: TikTok
+          <a href="https://share.google/CN1evzK8PPsqQ36SY" target="_blank" rel="noopener" style="color:#ffffff; text-decoration: underline;">
+            https://share.google/CN1evzK8PPsqQ36SY
+          </a>
+          <br />
+          <i class="fa-brands fa-facebook"></i>
+          Facebook
+          <a href="https://www.facebook.com/share/1AGmVZEZtG/" target="_blank" rel="noopener" style="color:#ffffff; text-decoration: underline;">
+            https://www.facebook.com/share/1AGmVZEZtG/
           </a>
         </p>
 
         <div class="social" style="margin-top:.9rem;">
-          <a href="https://share.google/G9NCFmX6c1lxf3zx4" target="_blank" rel="noopener" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
-          <a href="https://share.google/ZrjyoAsN4vCf5YTxZ" target="_blank" rel="noopener" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
-          <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+          <a href="https://share.google/wG4ZMwR2a81Rkp1ez" target="_blank" rel="noopener" aria-label="Inventory Gallery"><i class="fa-solid fa-images"></i></a>
+          <a href="https://share.google/CN1evzK8PPsqQ36SY" target="_blank" rel="noopener" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+          <a href="https://www.facebook.com/share/1AGmVZEZtG/" target="_blank" rel="noopener" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
           <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
         </div>
       </div>
@@ -1116,20 +1182,20 @@
         <strong style="color:white;">Company</strong>
         <a href="#mission">Mission</a>
         <a href="#products">Shop</a>
-        <a href="#choose">How to Choose</a>
+        <a href="#inventory">Inventory</a>
         <a href="#pay">Pay</a>
       </div>
 
       <div class="footer-links">
         <strong style="color:white;">Support</strong>
-        <a href="#">Shipping & Returns</a>
-        <a href="#">Safety Guide</a>
-        <a href="#">FAQ</a>
+        <a href="#contact">Contact</a>
+        <a href="#inventory">Inventory</a>
+        <a href="#pay">Payment</a>
       </div>
     </div>
 
     <div class="fineprint">
-      &copy; 2026 PS Tasers. All rights reserved. <br />
+      &copy; 2026 PTheBrandTasers. All rights reserved. <br />
       <span style="opacity:.92;">
         Disclaimer: Always follow local laws and product instructions. This site is for informational and retail purposes only.
       </span>
@@ -1155,7 +1221,6 @@
           </div>
         </div>
 
-        <!-- Added: Cash App instructions inside modal -->
         <div class="pay-note">
           <p style="color:#4b5563; font-weight:650;">
             <strong>Pay with Cash App:</strong> send payment to
@@ -1165,11 +1230,18 @@
             <i class="fa-solid fa-pen"></i>
             In the Cash App note, include the product name + your email/phone so we can confirm your order.
           </p>
+          <p class="note" style="margin-top:.6rem;">
+            <i class="fa-solid fa-images"></i>
+            Want to double-check photos/descriptions first? Visit:
+            <a href="https://share.google/wG4ZMwR2a81Rkp1ez" target="_blank" rel="noopener" style="color: var(--primary); font-weight: 900;">
+              Inventory Gallery
+            </a>
+          </p>
         </div>
 
         <p class="note">
           <i class="fa-solid fa-lock"></i>
-          Optional: If you add Stripe Payment Links later, the “Pay Securely” button below can take customers to Stripe checkout.
+          Optional: If you add Stripe Payment Links later, the “Pay Securely (Stripe)” button below can take customers to Stripe checkout.
         </p>
 
         <div class="modal-actions">
